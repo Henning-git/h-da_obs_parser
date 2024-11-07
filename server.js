@@ -1,6 +1,6 @@
 require('dotenv').config();
 const express = require('express');
-const { header, body, query, validationResult } = require('express-validator');
+const { query, validationResult } = require('express-validator');
 
 const parse_errors = require('./custom_modules/parse_errors');
 const obs_parser = require('./custom_modules/obs_parser');
