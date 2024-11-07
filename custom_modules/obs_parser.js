@@ -112,7 +112,7 @@ const extract_calendar = (mode, prefix) => {
 
         switch(state) {
             case 0: // not in event
-                new_calendar += line + '\n';
+                new_calendar += line + '\r\n';
                 break;
 
             case 1: // in event
@@ -129,7 +129,7 @@ const extract_calendar = (mode, prefix) => {
                 // add event to calendar
                 for(let j = 0; j < current_event.length; j++) { // for each line in current event
                     const event_line = current_event[j];
-                    new_calendar += event_line + '\n';
+                    new_calendar += event_line + '\r\n';
                 }
             }
         }
