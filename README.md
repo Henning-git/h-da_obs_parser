@@ -35,10 +35,10 @@ Der lange obs_key wird hier mit xx abgekürzt.\
 Die folgenden URLs kannst du in deinem Kalender einbinden.
 
 ### Beispiel 1:
-GET /?obs_key=xx&mode=black_list&prefix=P: &prefix=LN: \
+GET https://apis.henning-prien.de/h-da_obs_parser/?obs_key=xx&mode=black_list&prefix=P:&prefix=LN:\
 Diese URL wird einen Kalender mit allen Einträgen außer Praktika und Klausuren zurück geben.
 ### Beispiel 2:
-GET /?obs_key=xx&mode=white_list&prefix=P: &prefix=LN: \
+GET https://apis.henning-prien.de/h-da_obs_parser/?obs_key=xx&mode=white_list&prefix=P:&prefix=LN:\
 Diese URL wird einen Kalender mit allen Praktika und Klausuren zurück geben.
 
 Es sollte immer mindestens ein Kalender mit einer black_list verwendet werden, so kann es nicht passieren, dass ein Ereignis nicht in einem Kalender auftaucht.
