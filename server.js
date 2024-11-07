@@ -53,6 +53,7 @@ app
         // -------- extract requested calendar --------
         const new_calendar = obs_parser.extract_calendar(req_mode, req_prefix);
 
+        console.log('update');
         return res.status(200).send(new_calendar);
     });
 
